@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">AndroidAndFlutter</string>
+  <string name="navigate_to_flutter_activity">Navigate to Flutter Activity</string>
+  <string name="navigate_to_flutter_activity_using_cache_engine">Navigate to Flutter Activity using Cache Engine</string>
+  <string name="navigate_to_flutter_fragment_container_activity">Navigate to Flutter Fragment Container Activity</string>
+  <string name="navigate_to_a_specific_route">Navigate to a Specific Route</string>
+  <string name="pass_data_between_native_and_flutter">Pass Data between Android and Flutter</string>
+  <string name="navigate_to_hello_world">Navigate to Hello World</string>
+  <string name="navigate_to_default_flutter_app">Navigate to Default Flutter App</string>
+</resources>

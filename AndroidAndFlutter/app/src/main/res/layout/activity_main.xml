@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="activity"
+      type="me.abhishekkumar.androidandflutter.view.MainActivity" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.MainActivity">
+    <Button
+      android:id="@+id/navigateToHelloWorldButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToHelloWorld()}"
+      android:text="@string/navigate_to_hello_world"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/navigateToDefaultApp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToDefaultFlutterApp()}"
+      android:text="@string/navigate_to_default_flutter_app"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/navigateToHelloWorldButton" />
+
+    <Button
+      android:id="@+id/navigateToFlutterActivityButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToFlutterActivity()}"
+      android:text="@string/navigate_to_flutter_activity"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/navigateToDefaultApp" />
+
+    <Button
+      android:id="@+id/navigateToFlutterActivityWithCacheEngineButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToFlutterActivityWithCacheEngine()}"
+      android:text="@string/navigate_to_flutter_activity_using_cache_engine"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/navigateToFlutterActivityButton" />
+
+    <Button
+      android:id="@+id/navigateToFlutterFragmentContainerActivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToActivityWhereFlutterIsUsedAsFragment()}"
+      android:text="@string/navigate_to_flutter_fragment_container_activity"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/navigateToFlutterActivityWithCacheEngineButton" />
+
+    <Button
+      android:id="@+id/navigateToSpecificEntryPoint"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToASpecificRouteInFlutterModule()}"
+      android:text="@string/navigate_to_a_specific_route"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/navigateToFlutterFragmentContainerActivity" />
+
+    <Button
+      android:id="@+id/navigateToFlutterContainerActivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="@{()-> activity.navigateToFlutterContainerActivity()}"
+      android:text="@string/pass_data_between_native_and_flutter"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/navigateToSpecificEntryPoint" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
